@@ -103,8 +103,6 @@ $ wpscan -u http://192.168.1.110/wordpress -eu
 ![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image3.png)
 ![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image12.png)
 
-- Flag 4: 715dea6c055b9fe3337544932f2941ce
-
 ### Exploit used:
    - Unsalted password hash and privilege escalation with Python
    - Capturing flag 4: Secure user credentials from database, utilize John the Ripper to crack hash and use python to gain root privileges. 
