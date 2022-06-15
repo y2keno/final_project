@@ -1,11 +1,14 @@
 ﻿Joaquin Serrano
+
 Blue Team: Summary of Operations
-Table of Contents
-* Network Topology
-* Description of Targets
-* Monitoring the Targets
-* Patterns of Traffic & Behavior
-* Suggestions for Going Further
+
+Table of Contents:
+   * Network Topology
+   * Description of Targets
+   * Monitoring the Targets
+   * Patterns of Traffic & Behavior
+   * Suggestions for Going Further
+
 Network Topology
 The following machines were identified on the network:
 * Target 1
@@ -24,15 +27,6 @@ The following machines were identified on the network:
    * Operating System: Ubuntu 18.04
    * Purpose: The ELK (Elasticsearch & Kibana) Stack
    * IP Address: 192.168.1.100
-
-
-
-
-
-
-
-
-
 
 Network Diagram:
   
