@@ -9,7 +9,7 @@ Table of Contents
 
 Kali Linux Command
 Ping Scan only: $ nmap -sP 192.168.1.0/24
-![alt text](Final_Red_Team/images/image7.png)
+![](https://github.com/y2keno/final_project/blob/30062c908e5644872dddccd38346283d0b5f18b4/Final_Red_Team/images/image7.png)
  
 
 Nmap scan results for each machine reveal the below services and OS details:
