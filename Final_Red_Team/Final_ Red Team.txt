@@ -1,14 +1,16 @@
 ﻿Joaquin Serrano
-Red Team: Summary of Operations
-Table of Contents
-* Exposed Services
-* Critical Vulnerabilities
-* Exploitation
-Exposed Services
 
+Red Team: Summary of Operations
+
+Table of Contents
+   * Exposed Services
+   * Critical Vulnerabilities
+   * Exploitation
 
 Kali Linux Command
-Ping Scan only: $ nmap -sP 192.168.1.0/24 
+![Ping Scan only: $ nmap -sP 192.168.1.0/24]
+(Final_Red_Team/images/image7.png) 
+
   
 
 Nmap scan results for each machine reveal the below services and OS details:
