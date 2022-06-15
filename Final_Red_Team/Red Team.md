@@ -58,7 +58,7 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 - Kali Linux Command: 
 $ wpscan -u http://192.168.1.110/wordpress -eu 
 ![](https://github.com/y2keno/final_project/blob/f2315f50a2a9bd73db6ce996acaf697740dae695/Final_Red_Team/images/image2.png)
-![](https://github.com/y2keno/final_project/blob/f2315f50a2a9bd73db6ce996acaf697740dae695/Final_Red_Team/images/image16.png)
+![](https://github.com/y2keno/final_project/blob/eeff044c9c10ecd69f6574bca247e958df05c134/Final_Red_Team/images/image16.png)
 ![](https://github.com/y2keno/final_project/blob/638eec6e538de727c61a25a0b6898746f70bac65/Final_Red_Team/images/image17.png)
 
 - flag2.txt: fc3fd58dcdad9ab23faca6e9a36e581c
