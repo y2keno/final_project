@@ -9,10 +9,8 @@ Table of Contents
 
 Kali Linux Command
 Ping Scan only: $ nmap -sP 192.168.1.0/24
-![alt text][logo1]
-[logo1]: https://github.com/y2keno/final_project/blob/c2aba0734643f7201cb8cc823100fa8033a1ff52/Final_Red_Team/images/image7.png "nmap"
+![alt text](Final_Red_Team/images/image7.png)
  
-
 
 Nmap scan results for each machine reveal the below services and OS details:
 * Find the version of the service running on port 192.168.1.110
