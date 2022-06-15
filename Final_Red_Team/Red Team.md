@@ -2,7 +2,7 @@
 
 # Red Team: Summary of Operations
 
-Table of Contents:
+### Table of Contents:
    * Exposed Services
    * Critical Vulnerabilities
    * Exploitation
@@ -15,12 +15,13 @@ Ping Scan only: $ nmap -sP 192.168.1.0/24
 Nmap scan results for each machine reveal the below services and OS details:
 
 - Kali Linux Command: 
-Find the version of the service running on port 192.168.1.110
+Find the version of the service running on port 192.168.1.110:
 $ nmap -sV 192.168.1.110
 ![](https://github.com/y2keno/final_project/blob/df913b8917446432e94c1c6375b6100aa8389038/Final_Red_Team/images/image8.png)
 
 This scan identifies the services below as potential points of entry:
-- Target 1-Michael
+
+- Target 1 -Michael
    * Port 22/TCP Open SSH
    * Port 80/TCP Open HTTP
    * Port 111/TCP Open rcpbind
@@ -29,13 +30,16 @@ This scan identifies the services below as potential points of entry:
 
 ### Critical Vulnerabilities: 
 The following vulnerabilities were identified on each target:
-* Target 1
+
+- Target 1
    * Unsalted User Password Hash (WordPress Database)
    * Misconfiguration of User Privileges/Privilege Escalation
    * Weak User Password
    * User Enumeration (WordPress site)
-Exploitation
-* dirb returns the enumerated directories found within the target URL
+
+### Exploitation
+   * dirb returns the enumerated directories found within the target URL
+![](https://github.com/y2keno/final_project/blob/2b18992a598038337b3eea06eb8e762ca11ae9a6/Final_Red_Team/images/image1.png)
   
 
   
