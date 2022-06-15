@@ -1,15 +1,15 @@
 ﻿Joaquin Serrano
 
-Red Team: Summary of Operations
+# Red Team: Summary of Operations
 
-# Table of Contents:
+Table of Contents:
    * Exposed Services
    * Critical Vulnerabilities
    * Exploitation
 
-# Exposed Services:
-# Kali Linux Command
-# Ping Scan only: $ nmap -sP 192.168.1.0/24
+Exposed Services:
+Kali Linux Command
+Ping Scan only: $ nmap -sP 192.168.1.0/24
 ![](https://github.com/y2keno/final_project/blob/30062c908e5644872dddccd38346283d0b5f18b4/Final_Red_Team/images/image7.png)
  
 
