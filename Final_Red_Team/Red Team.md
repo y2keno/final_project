@@ -123,9 +123,11 @@ $ wpscan -u http://192.168.1.110/wordpress -eu
 - Utilized John the Ripper to crack the password hash from the hash.txt file.
 - Kali Linux command: 
    * $ john hash
+
 ![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image19.png)
   
 * Steven Password cracked: pink84
+
 ![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image6.png)
   
 * SSH using Steven’s credentials, Flag 4 was found.
