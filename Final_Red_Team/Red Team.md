@@ -41,11 +41,12 @@ The following vulnerabilities were identified on each target:
    * dirb returns the enumerated directories found within the target URL
 ![](https://github.com/y2keno/final_project/blob/2b18992a598038337b3eea06eb8e762ca11ae9a6/Final_Red_Team/images/image1.png)
 ![](https://github.com/y2keno/final_project/blob/9daf1cc299e38973b8392e18e94f21011da9d766/Final_Red_Team/images/image10.png)
+![](https://github.com/y2keno/final_project/blob/dbc3bb6c5a0d8ced95df9e13162e2d82bcd9a675/Final_Red_Team/images/image22.png)
 
 The Red Team was able to penetrate Target 1 and retrieve the following confidential data:
 
 - Target 1
-   * flag1.txt: b9bbcb33e11b80be759c4e844
+- flag1.txt: b9bbcb33e11b80be759c4e844
 
 
       * Exploit Used
@@ -58,38 +59,31 @@ The Red Team was able to penetrate Target 1 and retrieve the following confident
 $ wpscan -u http://192.168.1.110/wordpress -eu
 ![](https://github.com/y2keno/final_project/blob/f2315f50a2a9bd73db6ce996acaf697740dae695/Final_Red_Team/images/image2.png)
 ![](https://github.com/y2keno/final_project/blob/f2315f50a2a9bd73db6ce996acaf697740dae695/Final_Red_Team/images/image16.png)
-![](https://github.com/y2keno/final_project/blob/dbc3bb6c5a0d8ced95df9e13162e2d82bcd9a675/Final_Red_Team/images/image22.png)
 ![](https://github.com/y2keno/final_project/blob/638eec6e538de727c61a25a0b6898746f70bac65/Final_Red_Team/images/image17.png)
 
+- flag2.txt: fc3fd58dcdad9ab23faca6e9a36e581c
+
+
+### Exploit used:
+   * Continuation of exploit from Target 1. 
+   * SSH using Michael’s credentials, Flag 2 was found. 
+   * Flag 2 was found in /var/www next to the HTML folder that held Flag 1. 
+
+- Kali Linux Commands: 
+   * $ ssh michael@192.168.1.110
+   * pwd
+   * cd var/www
+   * ls -l
+   * cat flag2.txt
+
+![](https://github.com/y2keno/final_project/blob/3ffd601fef819d7e5dce7e0f70b736d1a4ba00e1/Final_Red_Team/images/image12.png)
   
+- Flag 3: afc01ab56b50591e7dccf93122770cd2
 
-  
-
-
-
-   * flag2.txt: fc3fd58dcdad9ab23faca6e9a36e581c
-
-
-   * Exploit used:
-         * Continuation of exploit from Target 1. 
-         * SSH using Michael’s credentials, Flag 2 was found. 
-         * Flag 2 was found in /var/www next to the HTML folder that held Flag 1. 
-Kali Linux Commands: 
-      * $ ssh michael@192.168.1.110
-      * pwd
-      * cd var/www
-      * ls -l
-      * cat flag2.txt
-  
-
-  
-
-* Flag 3: afc01ab56b50591e7dccf93122770cd2
-
-
-* Exploit used: 
+### Exploit used: 
    * Continuation of Exploit from Target 1. 
-* Capturing Flag 3: 
+
+- Capturing Flag 3: 
    * Gaining My SQL database access
    * Flag 3 was found in wp_posts table in the WordPress database
   
