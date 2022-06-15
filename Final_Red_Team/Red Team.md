@@ -7,26 +7,27 @@ Table of Contents:
    * Critical Vulnerabilities
    * Exploitation
 
-Exposed Services:
-- Kali Linux Command
-- Ping Scan only: $ nmap -sP 192.168.1.0/24
+### Exposed Services:
+- Kali Linux Command:
+Ping Scan only: $ nmap -sP 192.168.1.0/24
 ![](https://github.com/y2keno/final_project/blob/30062c908e5644872dddccd38346283d0b5f18b4/Final_Red_Team/images/image7.png)
  
-
 Nmap scan results for each machine reveal the below services and OS details:
-* Find the version of the service running on port 192.168.1.110
-Kali Linux Command: 
-* $ nmap -sV 192.168.1.110
-  
+
+- Kali Linux Command: 
+Find the version of the service running on port 192.168.1.110
+$ nmap -sV 192.168.1.110
+![](https://github.com/y2keno/final_project/blob/df913b8917446432e94c1c6375b6100aa8389038/Final_Red_Team/images/image8.png)
 
 This scan identifies the services below as potential points of entry:
-* Target 1-Michael
+- Target 1-Michael
    * Port 22/TCP Open SSH
    * Port 80/TCP Open HTTP
    * Port 111/TCP Open rcpbind
    * Port 139/TCP Open netbios-ssn
    * Port 445/TCP Open netbios-ssn
-Critical Vulnerabilities
+
+### Critical Vulnerabilities: 
 The following vulnerabilities were identified on each target:
 * Target 1
    * Unsalted User Password Hash (WordPress Database)
