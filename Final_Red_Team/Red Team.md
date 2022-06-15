@@ -37,7 +37,7 @@ The following vulnerabilities were identified on each target:
    * Weak User Password
    * User Enumeration (WordPress site)
 
-### Exploitation
+### Exploit Used
    * dirb returns the enumerated directories found within the target URL
 ![](https://github.com/y2keno/final_project/blob/2b18992a598038337b3eea06eb8e762ca11ae9a6/Final_Red_Team/images/image1.png)
 ![](https://github.com/y2keno/final_project/blob/9daf1cc299e38973b8392e18e94f21011da9d766/Final_Red_Team/images/image10.png)
