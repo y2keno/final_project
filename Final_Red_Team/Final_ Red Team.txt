@@ -9,7 +9,7 @@ Table of Contents
 
 Kali Linux Command
 Ping Scan only: $ nmap -sP 192.168.1.0/24
-![](final_project/Final_Red_Team/images/image7.png) 
+![](/Users/phoenix/repos/final_project/final_project/Final_Red_Team/images/image7.png) 
 
   
 
