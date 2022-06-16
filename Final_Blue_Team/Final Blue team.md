@@ -62,7 +62,7 @@ Alert 1 is implemented as follows:
       - Enumeration/Brute Force
 * Reliability: 
       - The reliability of the alert is very high. 
-      - Measuring by error codes: 400 and above will filter out any normal or successful responses. 400+ codes are client and server errors which are of more
+      - Measuring by error codes: 400 and above will filter out any normal or successful responses. 400+ codes are client and server errors.
 ![](https://github.com/y2keno/final_project/blob/e7e77e1930f42eb569709dcb59afd2bdd7f4ff9a/Final_Blue_Team/images/image4.png)
 
 ### HTTP Request Size Monitor
@@ -71,14 +71,15 @@ HTTP Request Size Monitor is implemented as follows:
 
 Alert 2 is implemented as follows:
    * Metric: 
-   * WHEN sum() of HTTP.request.bytes OVER all documents
+      - WHEN sum() of HTTP.request.bytes OVER all documents
    * Threshold: 
-   * IS ABOVE 3500
+      - IS ABOVE 3500
    * Vulnerability Mitigated: 
-   * Code injection in HTTP requests (XSS and CRLF) or DDOS
+      - Code injection in HTTP requests (XSS and CRLF) or DDOS
    * Reliability: 
-   * The reliability of the alert is Medium. 
+      - The reliability of the alert is Medium. 
    * This alert can create false positives due to the possibility of a large non-malicious HTTP request or legitimate HTTP traffic. 
+   ![](https://github.com/y2keno/final_project/blob/fed34ace67fa5fa1da4f7659ecf04422e7d551bc/Final_Blue_Team/images/image3.png)
   
 ### CPU Usage Monitor
 
@@ -87,13 +88,13 @@ CPU Usage Monitor is implemented as follows:
 
 Alert 3 is implemented as follows:
    * Metric: 
-   * WHEN max () OF system.process.cpu.total.pct OVER all documents
+      - WHEN max () OF system.process.cpu.total.pct OVER all documents
    * Threshold: 
-   * IS ABOVE 0.5
+      - IS ABOVE 0.5
    * Vulnerability Mitigated: 
-   * Malicious Software, active programs (malware or viruses) running taking up resources. 
+      - Malicious Software, active programs (malware or viruses) running taking up resources. 
    * Reliability: 
-   * The reliability of the alert if very high.
+      - The reliability of the alert if very high.
    * This can still help determine where to improve on CPU usage, even if there isn’t an active malicious program. 
   ![](https://github.com/y2keno/final_project/blob/e7e77e1930f42eb569709dcb59afd2bdd7f4ff9a/Final_Blue_Team/images/image5.png)
 
