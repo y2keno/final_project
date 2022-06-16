@@ -55,15 +55,15 @@ Excessive HTTP Errors are implemented as follows:
 
 Alert 1 is implemented as follows:
 * Metric: 
-   * WHEN count() GROUPED OVER top 5 ‘http.response.status_code’
+      - WHEN count() GROUPED OVER top 5 ‘http.response.status_code’
 * Threshold:
-   * IS ABOVE 400
+      - IS ABOVE 400
 * Vulnerability Mitigated:
-   * Enumeration/Brute Force
+      - Enumeration/Brute Force
 * Reliability: 
-   * The reliability of the alert is very high. 
-   * Measuring by error codes: 400 and above will filter out any normal or successful responses. 400+ codes are client and server errors which are of more
-   ![](https://github.com/y2keno/final_project/blob/e7e77e1930f42eb569709dcb59afd2bdd7f4ff9a/Final_Blue_Team/images/image4.png)
+      - The reliability of the alert is very high. 
+      - Measuring by error codes: 400 and above will filter out any normal or successful responses. 400+ codes are client and server errors which are of more
+![](https://github.com/y2keno/final_project/blob/e7e77e1930f42eb569709dcb59afd2bdd7f4ff9a/Final_Blue_Team/images/image4.png)
 
 ### HTTP Request Size Monitor
 HTTP Request Size Monitor is implemented as follows:
