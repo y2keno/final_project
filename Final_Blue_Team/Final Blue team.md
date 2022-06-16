@@ -54,13 +54,13 @@ Excessive HTTP Errors are implemented as follows:
 - WHEN count () GROUPED OVER top 5 ‘http.response.status_code’ IS ABOVE 400 FOR THE LAST 5 minutes
 
 Alert 1 is implemented as follows:
-* Metric: 
+   * Metric: 
       - WHEN count() GROUPED OVER top 5 ‘http.response.status_code’
-* Threshold:
+   * Threshold:
       - IS ABOVE 400
-* Vulnerability Mitigated:
+   * Vulnerability Mitigated:
       - Enumeration/Brute Force
-* Reliability: 
+   * Reliability: 
       - The reliability of the alert is very high. 
       - Measuring by error codes: 400 and above will filter out any normal or successful responses. 400+ codes are client and server errors.
 ![](https://github.com/y2keno/final_project/blob/e7e77e1930f42eb569709dcb59afd2bdd7f4ff9a/Final_Blue_Team/images/image4.png)
