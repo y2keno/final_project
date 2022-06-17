@@ -16,44 +16,47 @@ You must inspect your traffic capture to answer the following questions:
 
         - The users custom site domain name is Frank-n-Ted-DC.frank-n-ted.com
         * Filter: ip.addr==10.6.12.0/24
+![](https://github.com/y2keno/final_project/blob/7341658c3d5d585ec520a540ff09a297bb08c098/Final_%20Network%20Analysis/images/image5.png)
   
-
 2. What is the IP address of the Domain Controller (DC) of the AD network?
-The IP address is 10.6.12.12. (Fran-n-Ted-DC.frank-n-ted.com)
-* ip.addr==10.6.12.0/24
+
+        - The IP address is 10.6.12.12. (Fran-n-Ted-DC.frank-n-ted.com)
+        * Filter: ip.addr==10.6.12.0/24
+![](https://github.com/y2keno/final_project/blob/7341658c3d5d585ec520a540ff09a297bb08c098/Final_%20Network%20Analysis/images/image4.png)
           
-3. What is the name of the malware downloaded to the 10.6.12.203 machine? Once you have found the file, export it to your Kali machine's desktop.
-        The name of the malware is june11.dll
-        Filter: ip.addr==10.16.12.203 and http.request.method==GET
+3. What is the name of the malware downloaded to the 10.6.12.203 machine? 
+
+        - The name of the malware is june11.dll
+        * Filter: ip.addr==10.16.12.203 and http.request.method==GET
+![](https://github.com/y2keno/final_project/blob/7341658c3d5d585ec520a540ff09a297bb08c098/Final_%20Network%20Analysis/images/image9.png)
   
-
-
-
 4. Upload the file to VirusTotal.com. What kind of malware is this classified as?
-The malware was classified as a Trojan. 
+        - The malware was classified as a Trojan.
+![](https://github.com/y2keno/final_project/blob/7341658c3d5d585ec520a540ff09a297bb08c098/Final_%20Network%20Analysis/images/image3.png) 
   
 
-Vulnerable Windows Machines
+### Vulnerable Windows Machines
+
 The Security team received reports of an infected Windows host on the network. They know the following:
-* Machines in the network live in the range 172.16.4.0/24.
-* The domain mind-hammer.net is associated with the infected computer.
-* The DC for this network lives at 172.16.4.4 and is named Mind-Hammer-DC.
-* The network has standard gateway and broadcast addresses.
+        * Machines in the network live in the range 172.16.4.0/24.
+        * The domain mind-hammer.net is associated with the infected computer.
+        * The DC for this network lives at 172.16.4.4 and is named Mind-Hammer-DC.
+        * The network has standard gateway and broadcast addresses.
+
 Inspect your traffic to answer the following questions:
+
 1. Find the following information about the infected Windows machine:
-   * Host name: ROTTERDAM-PC
-   * IP address: 172.16.4.205
-   * MAC address: 00:59:07:b0:63:a4
-Filter: ip.src==172.16.4.4 and kerberos.CNameString
+
+        * Host name: ROTTERDAM-PC
+        * IP address: 172.16.4.205
+        * MAC address: 00:59:07:b0:63:a4
+        Filter: ip.src==172.16.4.4 and kerberos.CNameString
+![](https://github.com/y2keno/final_project/blob/7341658c3d5d585ec520a540ff09a297bb08c098/Final_%20Network%20Analysis/images/image10.png)
   
- 
-  
-
-
-
 2. What is the username of the Windows user whose computer is infected?
-The username of the infected computer is matthijs.devries
-Filter: ip.src==172.16.4.205 and kerberos.CNameString
+
+        - The username of the infected computer is matthijs.devries
+        Filter: ip.src==172.16.4.205 and kerberos.CNameString
   
 
 
