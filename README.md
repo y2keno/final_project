@@ -29,7 +29,7 @@ If the alerts are working, I will then monitor live traffic on the wire to detec
 
 - **Final Group Presentations** 
 
-    - ![Group Presentation](https://docs.google.com/presentation/d/e/2PACX-1vR0KfWGwecSLyEAJ7bTr22Or_kN0i9_WC_jNGuP6vvII04-CrKgm-WHDZ70phKZMRk1jtjySmXdXAeL/pub?start=true&loop=false&delayms=3000)
+    - [Group Presentation](https://docs.google.com/presentation/d/e/2PACX-1vR0KfWGwecSLyEAJ7bTr22Or_kN0i9_WC_jNGuP6vvII04-CrKgm-WHDZ70phKZMRk1jtjySmXdXAeL/pub?start=true&loop=false&delayms=3000)
     - ![Red team analysis](https://github.com/y2keno/final_project/blob/d4fa29fbb0d85118bb8fb06c190e6056e001484b/Final_Red_Team/Red%20Team.md)
     - ![Blue team analysis](https://github.com/y2keno/final_project/blob/d4fa29fbb0d85118bb8fb06c190e6056e001484b/Final_Blue_Team/Final%20Blue%20team.md)
     - ![Network forensic analysis](https://github.com/y2keno/final_project/blob/d4fa29fbb0d85118bb8fb06c190e6056e001484b/Final_%20Network%20Analysis/Final_%20Network_Analysis.md) 
