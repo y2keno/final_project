@@ -9,7 +9,7 @@ If the alerts are working, I will then monitor live traffic on the wire to detec
 ### Objectives 
 
 <details>
-    <summary>Click here to view the daily unit objectives.</summary>
+    <summary>Click here to view the objectives.</summary>
 
   <br>
 
